@@ -19,5 +19,7 @@ from django.urls import path
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^',include('mainApp.urls')),
+    url(r'^news/',include('newsApp.urls')),
     url(r'^webexample/',include('webexample.urls'))
 ]
